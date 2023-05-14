@@ -1,0 +1,499 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  *,
+  *:before,
+  *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  :focus,
+  :active {
+    outline: none;
+  }
+  a:focus,
+  a:active {
+    outline: none;
+  }
+  nav,
+  footer,
+  header,
+  aside {
+    display: block;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1.5;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  input,
+  button,
+  textarea {
+    font-family: inherit;
+  }
+  input::-ms-clear {
+    display: none;
+  }
+  button {
+    color: inherit;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  ul li {
+    list-style: none;
+  }
+  img {
+    vertical-align: top;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  /*--------------------*/
+/* ======================================================== */
+
+body {
+    background-color: #f8f9fb;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+.main-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0px 50px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.navbar__column {
+    height: 100%;
+    flex: 1 1 33.33333333%;
+}
+.navbar__column:nth-child(1) {
+    flex: 0 1 250px;
+}
+
+.navbar__column:nth-child(2) {
+    flex: 0 1 1000px;
+}
+.navbar__column:nth-child(3) {
+    text-align: right;
+    flex: 0 1 250px;
+}
+.righbar {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.navbar-header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+.wikilogo {
+    margin-left: 15px;
+}
+.wikilogo__title {
+    font-size: 23px;
+    font-weight: 500;
+    color: #000;
+}
+.wikilogo__subtitle {
+    font-size: 12px;
+    color: #303030;
+}
+
+.wikiicon {
+    width: 50px;
+    margin-top: 5px;
+}
+.input-group {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 500px;
+    position: relative;
+}
+.input-group:hover .btn {
+    opacity: 1;
+}
+.form-control {
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    font-size: 16px;
+}
+.btn {
+    opacity: 0;
+    transition: 0.4s;
+    position: absolute;
+    top: 0;right: 0;
+    padding: 5px 15px;
+    height: 100%;
+    background-color: #eeeded;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+.btn:hover {
+    background-color: #d6d6d6;
+}
+.op1 {
+    opacity: 1;
+}
+.nav {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.nav li {
+    margin-right: 20px;
+}
+.nav li:last-child {
+    margin: 0;
+}
+.navbar-right {
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+}
+
+/* MAIN BODY */
+
+.main {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 500;
+    border-bottom: 1px solid #000;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+}
+
+aside {
+    flex: 0 1 250px;
+}
+
+main {
+    flex: 0 1 1000px;
+}
+
+.overlay {
+    margin-top: 50px;
+}
+
+.overlay-content {
+    position: sticky;
+    left: 0;
+    top: 20px;
+}
+
+.contents {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b4b4b4;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+
+.menushka {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.menushka__menu {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 0px;
+}
+
+.menushka__menu div:nth-child(1) {
+    flex: 0 0 100px;
+}
+
+.menushka__menu div:nth-child(1) a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menushka__menu div:nth-child(1) a:last-child {
+    margin: 0;
+}
+
+.menushka__menu div:nth-child(2) {
+    flex: 1 1 auto;
+    text-align: right;
+}
+
+.menushka__menu div:nth-child(2) a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menushka__menu div:nth-child(2) a:last-child {
+    margin: 0;
+}
+
+.definition {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.definition__column:nth-child(2) {
+    font-size: 12px;
+    background-color: #f8f9fb;
+    text-align: center;
+    border: 1px solid #757575;
+    flex: 0 0 300px;
+    margin: 0px 0px 0px 15px;
+}
+.box-1__image {
+    width: 100%;
+    padding: 5px 10px;
+}
+.box-1__title {
+    background-color: #82c3d7;
+    font-size: 22px;
+    font-weight: bold;
+}
+.box-1__subtitle {
+    font-weight: 700;
+}
+.box-1__category {
+    background-color: #82c3d7;
+    font-size: 14px;
+    font-weight: 700;
+}
+.box-1__bottom {
+    text-align: right;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.wiki-details {
+    margin: 8px 0px 15px 0px;
+}
+
+
+.types {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.types__text-2 {
+    margin-top: 100px;
+}
+.types__image {
+    position: absolute;
+    border: 1px solid #dadada;
+    padding: 3px 3px 5px;
+    background-color: #f8f9fb;
+    top: 70px;
+    left: 300px;
+}
+.types__examples {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    align-self: flex-end;
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 14px;
+    text-align: center;
+}
+
+.block {
+    background-color: #f8f9fb;
+    border: 1px solid #dadada;
+    padding: 3px 3px 5px;
+    font-size: 13px;
+
+}
+
+figure {
+    padding: 0 10px;
+}
+
+figcaption {
+    margin-top: 10px;
+}
+
+.ecology__top {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 10px;
+}
+.ecology__top__column:last-child {
+    margin-left: 5px;
+}
+.ecology__box {
+    font-size: 13px;
+}
+.ecology__subtitle {
+    font-weight: 700;
+    text-align: center;
+}
+.ecology__body {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.ecology__body__column:last-child {
+    text-align: center;
+}
+
+.Diversity {
+    position: relative;
+}
+.Diversity .container {
+    margin: 0;
+    max-width: 730px;
+}
+.diversity__block {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 240px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.diversity__block figcaption {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.Growth-strategies .container {
+    margin: 0;
+    max-width: 730px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.factors__images {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.factors__column {
+    max-width: 400px;
+}
+.factors__column:last-child .block:first-child {
+    margin-bottom: 30px;
+}
+.subtitle {
+    font-weight: bold;
+}
+.productivity__row {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 15px;
+}
+.productivity__row .block {
+    text-align: center;
+}
+.role__row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.role__row .block {
+    margin-left: 20px;
+    text-align: center;
+    height: 80%;
+}
+
+.changes__row {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 20px;
+}
+.changes__row .block {
+    margin-left: 20px;
+}
+
+footer {
+    border-top: 1px solid #000;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.footer__top {
+    margin-bottom: 10px;
+}
+.footer__row {
+    padding-top: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    padding-bottom: 70px;
+}
+.footer__row a {
+    margin-right: 15px;
+}
